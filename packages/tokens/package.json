@@ -1,0 +1,26 @@
+{
+  "name": "@prorius-ui/tokens",
+  "version": "1.0.0",
+  "description": "Tokens to Prorius User Interface",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": {
+    "name": "Patrick Pecegueiro",
+    "email": "heytick@icloud.com",
+    "url": "https://github.com/patrickpecegueiro"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@prorius-ui/ts-config": "*",
+    "@prorius-ui/eslint-config": "*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  }
+}
